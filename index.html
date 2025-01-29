@@ -6,27 +6,79 @@
     <title>Legal Soluation</title>
     <link rel="shortcut icon" href="images/scale-balanced-solid.svg" type="image/x-icon">
     <!-- daisyUI CDN -->
-   
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- goole font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&display=swap" rel="stylesheet">
      <style>
+      .font-garamond{
+        font-family: "EB Garamond", serif;
+      }
         .bg-legal-image{
             background:linear-gradient(rgba(255, 255, 255, 0.062), rgba(0, 0, 0, 0.76)),url(./images/banner.png);
         }
+        .btn-color{
+          background-color: #B68C5A;
+        }
      </style>
 </head>
-<body>
+<body class="font-garamond">
    <header>
+    <!-- nav bar -->
+    <nav class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl"><img src="images/logo2.png" alt=""></a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-gray-500">Home ></a></li>
+            <li><a class="text-gray-500">Services ></a></li>
+            <li><a class="text-gray-500">Cases ></a></li>
+            <li><a class="text-gray-500">Blog ></a></li>
+            <li><a class="text-gray-500">Contact Us ></a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+        </div>
+      </div>
+    </nav>
     <!-- header section -->
     <section class="container mx-auto py-24 my-[60px] bg-legal-image">
         <div>
-            <h1 class="text-[52px] font-bold text-center mb-5 text-white">We Provide Effective <br> Leal Solutions</h1>
-            <p class="text-[16px] text-gray-500 text-center">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p><br>
+            <h1 class="text-[35px] lg:text-[60px]  font-bold text-center mb-5 text-white">We Provide Effective <br> Leal Solutions</h1>
+            <p class="text-[20px] text-gray-300 text-center">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p><br>
             <div class="flex justify-center">
                 <input class="pr-32 pl-8 rounded-xl" type="text" name="" id="" placeholder="Search your services">
-                <button class="btn btn-secondary ml-3 mt-1 bg-font-color">Secondary</button>
+                <button class="btn btn-color border-[#B68C5A] ml-3 mt-1 bg-font-color text-white w-36">Search</button>
             </div>
         </div>
     </section>
@@ -108,7 +160,7 @@
         <div class="hero h-[500px] " style="background-image: url(./images/banner.png);">
          <div class="hero-overlay bg-opacity-50"></div>
          <div class="hero-content text-neutral-content text-center">
-        <div class="max-w-md">
+        <div class="mx-10">
           <div class="avatar">
             <div class="ring-primary w-24 rounded-full ring ">
               <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
@@ -127,7 +179,7 @@
        <section class="mb-36">
         <h1 class="text-[40px] font-extrabold text-center">Frequently Asked Any Questions</h1>
         <p class="text-[16px] text-gray-500 text-center mt-[10px] mb-[64px]">There are many variations of passages of Lorem Ipsum available, but the majority have <br>suffered alteration in some form, by injected humour.</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 ">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
           <!-- text -->
           <div class="my-auto">
             <div class="collapse collapse-plus bg-base-200 mb-6">
@@ -160,18 +212,18 @@
             </div>
           </div>
           <!-- image -->
-           <div>
+           <div class="ml-24">
             <img src="images/faq.png" alt="">
            </div>
         </div>
        </section>
        <!-- contact with us -->
-        <sectio class="mb-36">
+        <section class="mb-36">
           <h1 class="text-[40px] font-extrabold text-center">Contact With Us</h1>
         <p class="text-[16px] text-gray-500 text-center mt-[10px] mb-[64px]">There are many variations of passages of Lorem Ipsum available, but the majority have <br>suffered alteration in some form, by injected humour.p>
           <!-- contact area container -->
-           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- contact -->
+           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <!-- contact area -->
              <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
             <!-- card 1 -->
              <div class="text-center bg-gray-200">
@@ -210,6 +262,15 @@
               Sunday: 9AM to 1 PM</p>
              </div>
              </div>
+             <!-- input area -->
+              <form action="">
+                <input class="bg-gray-100 py-6 w-[400px] lg:w-[500px] pl-4 ml-5 rounded-lg mb-3" type="text" name="" id="" placeholder="Your name"><br>
+                <input class="bg-gray-100 py-6 w-[400px] lg:w-[500px] pl-4 ml-5 rounded-lg mb-3 required" type="email" id="" name="" placeholder="Your Email"><br>
+                
+                <textarea class="bg-gray-100 py-6 w-[400px] lg:w-[500px] pl-4 ml-5 rounded-lg mb-3" name="" id="" placeholder="Subject"></textarea><br>
+                <button class="btn  w-[400px] lg:w-[500px] pl-4 ml-5 rounded-lg mb-3 btn-color text-white">block</button>
+                
+              </form>
            </div>
         </section>
    </main>
@@ -230,7 +291,7 @@
                 <!-- card 2 -->
                 <div>  
                     <nav class="">
-                        <h6 class="text-[35px] font-semibold mt-5">Usefull Link</h6>
+                        <h6 class="text-[35px] font-semibold my-5">Usefull Link</h6>
                         <a class="text-gray-500 flex mb-3">Homes</a>
                         <a class="text-gray-500 flex mb-3">About Us</a>
                         <a class="text-gray-500 flex mb-3">Cases</a>
@@ -241,7 +302,7 @@
                 <!-- card 3 -->
                  <div>
                     <nav>
-                        <h6 class="text-[35px] font-semibold mt-5">Contact Now</h6>
+                        <h6 class="text-[35px] font-semibold my-5">Contact Now</h6>
                         <a class="text-gray-500">555 4th 5t NW, Washington<br>DC 20530, United States</a><br>
                         <a class="text-gray-500">+88 01750 000 000 <br>
                             +88 01750 000 000</a><br>
@@ -252,17 +313,20 @@
                 <!-- card 4 -->
                  <div>
                     <form>
-                        <h6 class="text-[35px] font-semibold mt-5">Subscribe</h6>
+                        <h6 class="text-[35px] font-semibold my-5">Subscribe</h6>
                         <fieldset class="form-control w-80">
                           <label class="">
                             <span class="text-gray-500 ">Subscribe for our latest & <br>Articles. We Won’t Give You <br> Spam Mails</span>
                           </label>
-                          <div class="mt-4">
-                            <input
-                              type="text"
+                          <div class="mt-4 flex relative">
+                            <div>
+                              <input type="text"
                               placeholder="Email Address"
-                              class="py-3 px-4 rounded-lg" />
-                              <img class="bg-gradient-to-r from-purple-500 to-pink-500 h-12 w-16 rounded-lg" src="images/location-arrow-solid.svg" alt="">
+                              class="py-4 px-4 rounded-lg" />
+                            </div>
+                            <div>
+                              <img class="bg-[#B68C5A] to-pink-500 h-[52px] w-[78px] rounded-lg absulate -ml-3" src="images/location-arrow-solid.svg" alt="">
+                            </div>
                           </div>
                         </fieldset>
                       </form>
